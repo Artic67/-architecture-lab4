@@ -1,0 +1,7 @@
+print Hello world!
+delete abc sss
+delete 1+,2+,3+,4+,5 ,
+print Hello-guys
+delete aaa:bbb:ccc:ddd :
+print something
+delete programming!!in!!go !!

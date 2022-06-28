@@ -6,8 +6,8 @@ import (
 	"log"
 	"os"
 
-	parser "github.com/Artic67/al4/parser"
-	loop "github.com/Artic67/al4/loop"
+	loop "github.com/Artic67/architecture-lab4/loop"
+	parser "github.com/Artic67/architecture-lab4/parser"
 )
 
 // File name argument input

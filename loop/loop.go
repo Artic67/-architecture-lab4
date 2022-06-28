@@ -3,7 +3,7 @@ package loop
 import (
 	"sync"
 
-	"github.com/Artic67/al4/parser"
+	"github.com/Artic67/architecture-lab4/parser"
 )
 
 // Structure of trusted handler
@@ -149,5 +149,3 @@ func (loop *EventLoop) verifyRunning() {
 		panic("Unable to perform an action. Loop was not started")
 	}
 }
-
-

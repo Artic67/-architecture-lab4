@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Artic67/architecture-lab-4/parser"
+	"github.com/Artic67/architecture-lab4/parser"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -50,7 +50,7 @@ func TestManyAwaitsAtOneTime(t *testing.T) {
 	loop.Post(&parser.PrintCmd{Text: "?@!/,. s ddd!"})
 	loop.Post(&parser.PrintCmd{Text: "I am here!"})
 	loop.Post(&parser.DeleteCmd{
-		Text:      "M E R G E D W O R D ?",
+		Text:    "M E R G E D W O R D ?",
 		DSymbol: " ",
 	})
 
@@ -74,7 +74,7 @@ func TestPostCommandAfterLoopWasStopped(t *testing.T) {
 	loop.Post(&parser.PrintCmd{Text: "Oh no, I will be executed in stopped loop!"})
 	loop.Post(&parser.PrintCmd{Text: "Me too, bro :("})
 	loop.Post(&parser.DeleteCmd{
-		Text:      "Yall stupid go home!",
+		Text:    "Yall stupid go home!",
 		DSymbol: " ",
 	})
 
@@ -115,7 +115,7 @@ func TestExecutionOfDeleteCommand(t *testing.T) {
 	expected := "deletemeplease\n"
 
 	command := parser.DeleteCmd{
-		Text:      inputString,
+		Text:    inputString,
 		DSymbol: inputDelSym,
 	}
 
